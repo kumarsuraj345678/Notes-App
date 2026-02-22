@@ -1,0 +1,15 @@
+.appContainer {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media (max-width: 650px) {
+  .appContainer {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}

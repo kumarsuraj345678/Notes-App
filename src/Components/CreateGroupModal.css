@@ -1,0 +1,144 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.modalBox {
+  background: #ffffff;
+  padding: 30px 35px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+}
+
+/* TITLE */
+
+.modalBox h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* GROUP NAME ROW */
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inputRow label {
+  width: 150px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.inputRow input {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+/* COLOR ROW */
+
+.colorRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.colorRow label {
+  width: 150px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.colors {
+  display: flex;
+  gap: 12px;
+}
+
+.colorCircle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.colorCircle.active {
+  border: 3px solid #000;
+}
+
+/* BUTTON */
+
+.createBtn {
+  background: #16008b;
+  color: white;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  float: right;
+}
+
+@media (max-width: 600px) {
+  .modalBox {
+    width: 95%;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .modalBox h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .inputRow,
+  .colorRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .inputRow label,
+  .colorRow label {
+    width: 110px;
+    font-size: 14px;
+  }
+
+  .inputRow input {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .colors {
+    gap: 8px;
+  }
+
+  .colorCircle {
+    width: 26px;
+    height: 26px;
+  }
+
+  .createBtn {
+    width: 100%;
+    float: none;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 15px;
+  }
+}

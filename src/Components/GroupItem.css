@@ -1,0 +1,27 @@
+.groupItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.groupItem:hover {
+  background: #f0f0f0;
+}
+
+.groupItem.active {
+  background: #dcdcdc;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
